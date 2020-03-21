@@ -1,12 +1,9 @@
 import React from 'react'
 import axios from 'axios'
 import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css'
 
-
-const apiKey = 'AIzaSyBuqivjlUHx_1CzHXli6ft9xLWrI-dOGwo'
 const style = {
     width: '98%',
     height: '100%',
@@ -22,20 +19,19 @@ class GMap extends React.Component {
             longitude : '',
             latitude : '',
             welcomeBtnClicked : this.props.welcomeBtn,
-            // flag: !this.props.welcomeBtn
         }
     }
 
     getCoordinates = () => {
         this.timer = setInterval(() => {
-            console.log('new coordinates at ' + new Date().toLocaleTimeString())
-            axios.get('http://api.open-notify.org/iss-now.json')
+            axios.get('https://cors-anywhere.herokuapp.com/http://api.open-notify.org/iss-now.json')
             .then(response => {
                 this.setState({
                     longitude : response.data.iss_position.longitude,
                     latitude : response.data.iss_position.latitude
                 })
             })
+            .catch(err => alert(err))
         }, 2000);
     }
 
@@ -61,7 +57,7 @@ class GMap extends React.Component {
 
                 <div className="justTheMap p-3 mb-2 bg-dark text-white" style={{ height:'100vh'}}>
                     <Map google={this.props.google} zoom={5}  
-                    style={style} center={{
+                    style={style} className="googleMap" center={{
                         lat: this.state.latitude,
                         lng: this.state.longitude
                         }}>
@@ -81,5 +77,5 @@ class GMap extends React.Component {
 }
 
 export default GoogleApiWrapper({
-    apiKey: (apiKey)
+    apiKey: (process.env.REACT_APP_API_KEY)
   })(GMap)

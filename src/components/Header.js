@@ -37,15 +37,6 @@ const Header = (props) => {
             spy={true} smooth={true}
             offset={0} duration={500}
           >About ISS</Link></Nav.Link>
-
-        <Nav.Link href="#">
-
-          <Link
-            activeClass="inactive"
-            to="newsletter"
-            spy={true} smooth={true}
-            offset={0} duration={500}
-          >Contact</Link></Nav.Link>
       </Nav>
     </Navbar>
   </div>

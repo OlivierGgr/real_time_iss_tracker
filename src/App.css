@@ -43,21 +43,26 @@
 }
 
 .btn-container {
+  width: 30%;
   z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.btn-container p {
-  margin-left: 50px;
+.btn-container button {
+  margin-top: 0;
+  margin-right: 0;
 }
 
 .coordinates {
@@ -68,16 +73,23 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .coordinates-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
 }
 
 .justTheMap {
@@ -238,8 +250,17 @@
     font-weight: 300;
     line-height: 1.0;
   }
+  .welcome-call-to-action {
+    margin-right: 10px !important;
+  }
   .newsBox {
     height: 70vh;
+  }
+  .googleMap {
+    left: 8px;
+  }
+  .btn-container {
+    width: 40%;
   }
 }
 
@@ -257,6 +278,9 @@
     font-size: 2.5rem;
     font-weight: 300;
     line-height: 1.0;
+  }
+  .btn-container {
+    width: 40%;
   }
   .newsBox {
     height: 55vh !important;
@@ -276,9 +300,6 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-}
-
-@media only screen and (max-width: 768px) {
   .newsBox {
     height: 45vh;
   }
@@ -293,7 +314,7 @@
     height: 100%;
   }
   .peopleThatAreInSpace {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   .imageCarousel {
     width: 90%;
@@ -307,6 +328,45 @@
   }
   .peopleInSpaceContainer {
     width: 120%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .coordinates {
+    display: block;
+  }
+  .display-4 {
+    font-size: 1.5rem;
+  }
+  .containerNews {
+    width: auto;
+  }
+  .newsBox {
+    height: 80vh;
+  }
+  .peopleInSpaceContainer {
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+  .peopleThatAreInSpace {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 0.8rem;
+  }
+  .small-logo {
+    display: none;
+  }
+  .headerContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .googleMap {
+    left: 4px;
+  }
+  .col-4 {
+    max-width: 48%;
   }
 }
 /*# sourceMappingURL=App.css.map */

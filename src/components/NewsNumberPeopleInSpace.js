@@ -10,9 +10,8 @@ export default class NewsNumberPersonInSpace extends React.Component {
     };
 
     componentDidMount() {
-      axios.get('http://api.open-notify.org/astros.json')
+      axios.get('https://cors-anywhere.herokuapp.com/http://api.open-notify.org/astros.json')
         .then(res=> {
-          console.log(res);
           this.setState({
             persons: res.data.people 
           });
@@ -31,7 +30,7 @@ export default class NewsNumberPersonInSpace extends React.Component {
                  </span>
                <span className="col-lg-6 peopleInSpaceContainer">
                <ul className='peopleThatAreInSpace'>
-               {this.state.persons.map(person => <li>{person.name}</li>)}
+               {this.state.persons.map(person => <li key={person.name}>{person.name}</li>)}
              </ul>
                </span>
 

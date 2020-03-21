@@ -51,7 +51,6 @@ class App extends React.Component {
   }
 
   dataFn(dataFromChild) {
-    console.log('called: ' + dataFromChild)
     this.setState({
       checkBoxThatOpensModal: dataFromChild
     })

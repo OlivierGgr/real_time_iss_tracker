@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/real_time_iss_tracker/static/css/main.7b524c44.chunk.css",
+    "main.js": "/real_time_iss_tracker/static/js/main.38818cba.chunk.js",
+    "main.js.map": "/real_time_iss_tracker/static/js/main.38818cba.chunk.js.map",
+    "runtime-main.js": "/real_time_iss_tracker/static/js/runtime-main.08b29b02.js",
+    "runtime-main.js.map": "/real_time_iss_tracker/static/js/runtime-main.08b29b02.js.map",
+    "static/css/2.0624914a.chunk.css": "/real_time_iss_tracker/static/css/2.0624914a.chunk.css",
+    "static/js/2.1b44db52.chunk.js": "/real_time_iss_tracker/static/js/2.1b44db52.chunk.js",
+    "static/js/2.1b44db52.chunk.js.map": "/real_time_iss_tracker/static/js/2.1b44db52.chunk.js.map",
+    "index.html": "/real_time_iss_tracker/index.html",
+    "precache-manifest.7178b1ea7c9e052beeaaee29d779d5fc.js": "/real_time_iss_tracker/precache-manifest.7178b1ea7c9e052beeaaee29d779d5fc.js",
+    "service-worker.js": "/real_time_iss_tracker/service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "/real_time_iss_tracker/static/css/2.0624914a.chunk.css.map",
+    "static/css/main.7b524c44.chunk.css.map": "/real_time_iss_tracker/static/css/main.7b524c44.chunk.css.map",
+    "static/media/0701890_orig.jpg": "/real_time_iss_tracker/static/media/0701890_orig.84393bfc.jpg",
+    "static/media/picture 1.jpg": "/real_time_iss_tracker/static/media/picture 1.864a5684.jpg",
+    "static/media/picture 2.jpg": "/real_time_iss_tracker/static/media/picture 2.d6721184.jpg",
+    "static/media/picture 3.jpg": "/real_time_iss_tracker/static/media/picture 3.d4babe2f.jpg",
+    "static/media/picture 4.jpg": "/real_time_iss_tracker/static/media/picture 4.ca3a07c7.jpg",
+    "static/media/picture 5.jpg": "/real_time_iss_tracker/static/media/picture 5.76656d2f.jpg",
+    "static/media/picture 6.jpg": "/real_time_iss_tracker/static/media/picture 6.7a348b20.jpg",
+    "static/media/picture 7.jpg": "/real_time_iss_tracker/static/media/picture 7.6e2b63ea.jpg",
+    "static/media/picture_8.jpg": "/real_time_iss_tracker/static/media/picture_8.f9dc1bcf.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.08b29b02.js",
+    "static/css/2.0624914a.chunk.css",
+    "static/js/2.1b44db52.chunk.js",
+    "static/css/main.7b524c44.chunk.css",
+    "static/js/main.38818cba.chunk.js"
+  ]
+}

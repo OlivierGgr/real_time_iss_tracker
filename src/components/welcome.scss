@@ -53,6 +53,28 @@ h2 {
     }
 }
 
+@media only screen and (max-width: 576px) {
+    .display-3 {
+      font-size: 1.5rem;
+    }
+
+    .lead{
+        font-size: 0.8rem;
+    }
+
+    .col-5 {
+        max-width: 100%;
+    }
+    
+    .col-7{
+        max-width: 100%;
+    }
+
+    .welcome-call-to-action {
+        margin-right: 5px!important;
+    }
+  }
+
 // @media (min-width: 576px) and (max-width: 768px) {
 //     .display-3 {
 //         font-size: 2.5rem;

@@ -18,7 +18,7 @@ $darkerDarkTheme: darken($darkTheme, 10%);
 }
 
 .welcome-call-to-action {
-margin-right: 0px!important;
+  margin-right: 0px!important;
   margin-top: 25px;
   height: 35px;
   width: 670px;
@@ -36,22 +36,31 @@ margin-right: 0px!important;
   height: 60px;
  }
  .btn-container{ 
+  width: 30%;
   z-index: 1000;       
   display:flex;        
-  flex-direction: row;        
+  flex-direction: column;        
   align-items: center;        
+  justify-content: space-evenly;
+  button{
+    margin-top: 0;
+    margin-right: 0;
+  }
  }        
- .btn-container p {        
-  margin-left: 50px;        
- }        
+//  .btn-container p {        
+//   margin-left: 50px;        
+//  }        
  .coordinates{        
   display:flex;        
   flex-direction: row;        
+  align-items: center;
+  justify-content: space-evenly;
  }        
 
  .coordinates-info{
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
+   width: 100%;
  }
 
  .justTheMap{
@@ -174,8 +183,19 @@ margin-right: 0px!important;
     line-height: 1.0;
   }
 
+  .welcome-call-to-action {
+    margin-right: 10px!important;
+  }
+
   .newsBox {
     height:70vh;
+  }
+
+  .googleMap {
+    left: 8px;
+  }
+  .btn-container{
+    width:40%
   }
  }
 
@@ -192,6 +212,10 @@ margin-right: 0px!important;
     line-height: 1.0;
   }
 
+  .btn-container{
+    width:40%
+  }
+
   .newsBox {
     height:55vh!important;
   }
@@ -202,8 +226,6 @@ margin-right: 0px!important;
     align-items: center;
     justify-content: center;
   }
-}
-@media only screen and (max-width: 768px) {
   .newsBox {
     height:45vh;
   }
@@ -214,7 +236,7 @@ margin-right: 0px!important;
   }
 
   .peopleThatAreInSpace{
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 
   .imageCarousel {
@@ -230,4 +252,49 @@ margin-right: 0px!important;
   .peopleInSpaceContainer{
     width:120%
   }
+}
+
+@media only screen and (max-width: 576px) {
+  .coordinates {
+    display: block;
+  }
+  .display-4 {
+    font-size: 1.5rem;
+  }
+  .containerNews {
+    width:auto;
+  }
+
+  .newsBox{
+    height:80vh;
+  }
+
+  .peopleInSpaceContainer{
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+  .peopleThatAreInSpace {
+    font-size: 1rem;
+  }
+
+  h6 {
+    font-size: 0.8rem;
+  }
+
+  .small-logo {
+    display:none;
+  }
+
+  .headerContainer {
+    justify-content: center;
+  }
+
+  .googleMap {
+    left:4px;
+  }
+
+  .col-4 {
+    max-width: 48%;
+  }
+
 }

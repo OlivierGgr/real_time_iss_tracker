@@ -50,7 +50,6 @@ class GalleryCarousel extends React.Component {
       selectedIndex: 0
     }
   }
-  // state = { modalIsOpen: false }
 
   toggleModal(j) {
     this.setState({ modalIsOpen: !this.state.modalIsOpen, selectedIndex: j });
@@ -71,7 +70,7 @@ class GalleryCarousel extends React.Component {
         <div className={'wrapperCarousel'}>
           <Gallery className={'containerCarousel'}>
             {images.map(({ src }, j) => (
-              <Image onClick={() => this.toggleModal(j)} className='imageCarousel'>
+              <Image key={j} onClick={() => this.toggleModal(j)} className='imageCarousel'>
                 <img
                   className={'imageCarousel'}
                   alt={"asdad"}
