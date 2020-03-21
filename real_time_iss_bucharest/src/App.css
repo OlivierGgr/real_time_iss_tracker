@@ -1,0 +1,312 @@
+.containerNews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.imageNews {
+  width: 100%;
+}
+
+#welcome {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+.welcome-call-to-action {
+  margin-right: 0px !important;
+  margin-top: 25px;
+  height: 35px;
+  width: 670px;
+}
+
+.headerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar-expand {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-flow: row nowrap !important;
+          flex-flow: row nowrap !important;
+  /* justify-content: flex-end; */
+}
+
+.header_logo {
+  height: 60px;
+}
+
+.btn-container {
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-container p {
+  margin-left: 50px;
+}
+
+.coordinates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.coordinates-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.justTheMap {
+  position: relative;
+}
+
+.justTheMap:first-child {
+  width: 95% !important;
+}
+
+.newsSection {
+  width: 80%;
+  max-width: 1400px;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.newsBox {
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  width: 100% !important;
+}
+
+.newsBoxContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+.peopleThatAreInSpace {
+  list-style: none;
+  font-size: 1.8rem;
+}
+
+.newsBoxTitle {
+  text-align: center;
+  font-size: 1.7rem;
+  width: 100%;
+  background-color: #1d2124;
+}
+
+.newsBoxText {
+  font-size: 1.4rem;
+}
+
+.imageCarousel {
+  width: 220px;
+  height: 150px;
+}
+
+.containerCarousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.containerCarousel > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1 1 220px;
+          flex: 1 1 1 1 220px;
+  margin: 10px;
+}
+
+.wrapperCarousel {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.form-container {
+  height: 80vh;
+  margin-top: 30px;
+}
+
+.form-container {
+  height: 80vh;
+}
+
+.rowThatWorks {
+  height: 80vh;
+}
+
+.newsletter-section {
+  height: 100vh;
+}
+
+.newsletter {
+  min-height: 85vh;
+}
+
+.newsletter-inputs {
+  padding-bottom: 20px;
+}
+
+.newsletter-section {
+  height: 100vh;
+}
+
+.newsletter {
+  min-height: 85vh;
+}
+
+.newsletter-inputs {
+  padding-bottom: 20px;
+}
+
+.display-5 {
+  padding-bottom: 20px;
+}
+
+.cancelBtn {
+  visibility: hidden;
+}
+
+.footer {
+  margin-top: 10px;
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .display-4 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.0;
+  }
+  .form-img {
+    height: 400px;
+  }
+  .newsBox {
+    height: 51vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 993px) {
+  .display-4 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.0;
+  }
+  .newsBox {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .containerNews {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.0;
+  }
+  .newsBox {
+    height: 55vh !important;
+  }
+  .rowThatWorks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .newsBox {
+    height: 45vh;
+  }
+  .containerNews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .peopleThatAreInSpace {
+    font-size: 1.4rem;
+  }
+  .imageCarousel {
+    width: 90%;
+    height: 90%;
+    text-align: center;
+  }
+  .newsBoxContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .peopleInSpaceContainer {
+    width: 120%;
+  }
+}
+/*# sourceMappingURL=App.css.map */
